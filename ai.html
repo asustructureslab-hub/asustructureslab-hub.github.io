@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI | Barzin Mobasher Research Group</title>
+<meta name="description" content="The group develops AI tooling for its engineering work. Deterministic solvers perform the calculations and the language model handles routing, decomposition, and explanation. It does not compute values that a structure depends on.">
+<meta name="theme-color" content="#8C1D40">
+<link rel="canonical" href="https://mobasherlab.com/ai.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Barzin Mobasher Research Group">
+<meta property="og:title" content="AI">
+<meta property="og:description" content="The group develops AI tooling for its engineering work. Deterministic solvers perform the calculations and the language model handles routing, decomposition, and explanation. It does not compute values that a structure depends on.">
+<meta property="og:url" content="https://mobasherlab.com/ai.html">
+<meta property="og:image" content="https://mobasherlab.com/assets/img/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/asu-unity.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<header class="asu-header">
+  <div class="container">
+    <div class="brand-row">
+      <a href="https://www.asu.edu/" aria-label="Arizona State University home">
+        <img class="asu-logo" src="assets/img/arizona-state-university-logo.png" alt="Arizona State University" width="289" height="52">
+      </a>
+      <a class="search-toggle" href="https://search.asu.edu/" aria-label="Search ASU">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="M15 15 l5 5 M17 8 h5 M17 12 h4"/></svg>
+      </a>
+    </div>
+    <div class="title-row">
+      <a class="site-title" href="index.html">Barzin Mobasher Research Group</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
+      <nav class="main-nav" id="mainnav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <div class="nav-item has-sub">
+          <a href="research.html">Research</a>
+          <button class="sub-toggle" aria-expanded="false" aria-controls="nav-sub-1" aria-label="Open the Research menu"><span aria-hidden="true">&#9662;</span></button>
+          <div class="sub-menu" id="nav-sub-1">
+            <a href="research.html">Research overview</a>
+            <a href="fiber-reinforced-concrete.html">Fiber reinforced concrete</a>
+            <a href="hybrid-reinforced-concrete.html">Hybrid reinforced concrete</a>
+            <a href="textile-reinforced-concrete.html">Textile reinforced concrete</a>
+            <a href="uhpc.html">Ultra-high performance concrete</a>
+            <a href="precast-tunnel-lining.html">Precast tunnel lining</a>
+            <a href="projects/valley-metro.html">Valley Metro track slab</a>
+            <a href="projects.html">Projects</a>
+          </div>
+        </div>
+        <a href="people.html">People</a>
+        <div class="nav-item has-sub">
+          <a href="publications.html">Publications</a>
+          <button class="sub-toggle" aria-expanded="false" aria-controls="nav-sub-3" aria-label="Open the Publications menu"><span aria-hidden="true">&#9662;</span></button>
+          <div class="sub-menu" id="nav-sub-3">
+            <a href="publications.html">All publications</a>
+            <a href="selected-publications.html">Selected by topic</a>
+            <a href="presentations.html">Presentations and conferences</a>
+          </div>
+        </div>
+        <div class="nav-item has-sub">
+          <a href="software.html">Software</a>
+          <button class="sub-toggle" aria-expanded="false" aria-controls="nav-sub-4" aria-label="Open the Software menu"><span aria-hidden="true">&#9662;</span></button>
+          <div class="sub-menu" id="nav-sub-4">
+            <a href="software.html">All software</a>
+            <a href="software/hrc-designer.html">HRC Designer</a>
+          </div>
+        </div>
+        <a href="ai.html" class="active" aria-current="page">AI</a>
+        <div class="nav-item has-sub">
+          <a href="videos.html">Media</a>
+          <button class="sub-toggle" aria-expanded="false" aria-controls="nav-sub-6" aria-label="Open the Media menu"><span aria-hidden="true">&#9662;</span></button>
+          <div class="sub-menu" id="nav-sub-6">
+            <a href="videos.html">Videos and lectures</a>
+            <a href="news.html">News and press</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<section class="hero-dark" style="padding:4rem 0">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--gold)">Software and methods</span>
+    <h1 style="color:#fff; max-width:22ch">Artificial intelligence</h1>
+    <p class="lead" style="max-width:68ch">The group develops AI tooling for its engineering work. Deterministic solvers perform the calculations and the language model handles routing, decomposition, and explanation. It does not compute values that a structure depends on.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="grid grid-2" style="gap:3rem; align-items:start">
+      <div>
+        <h2>Principles</h2>
+        
+    <div class="principle">
+      <h3>Calculations come from the solver</h3>
+      <p>Every number in a deliverable comes from running the solver in the current session rather than from memory or a stored file. The language model routes, decomposes, and translates, and does not compute safety-critical values.</p>
+    </div>
+    <div class="principle">
+      <h3>No guessing</h3>
+      <p>A standard, code, or test method is named only when that name appears in the source, with its defining parameters cross-checked first. Where a value is absent from the source, the gap is stated rather than filled in.</p>
+    </div>
+    <div class="principle">
+      <h3>Verification against published results</h3>
+      <p>Each computation module carries tests against published results, and outputs are attributable to their inputs, solver version, and run.</p>
+    </div>
+    <div class="principle">
+      <h3>Human review before adoption</h3>
+      <p>Model output is not adopted into the group's working procedures without human approval, and document retrieval is not treated as verified knowledge. Digitizers, crack counters, and fitting routines stop at a review step before a number is accepted.</p>
+    </div>
+      </div>
+      <div class="side-card" style="margin-bottom:0">
+        <h3>Why this matters in engineering</h3>
+        <p class="small">A structural calculation is checked by a licensed engineer who carries the liability for it. That requires the same input to give the same answer every time, and every number to be traceable to the script, version, and inputs that produced it. A language model that estimates a residual strength cannot be checked in that way, so these systems do not allow it to.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="band-gray">
+  <div class="container">
+    <div class="section-head"><h2>Tools</h2></div>
+    
+    <h2 style="font-size:1.4rem; margin-top:2.2rem">Mechanics engines</h2><div class="grid grid-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Section analysis engines</h3>
+          <p class="small">Closed-form strain-compatibility solvers for the flexural response of fiber reinforced and hybrid reinforced concrete. Multi-linear tension and compression laws with any number of segments, the quadratic neutral-axis solver for a fiber matrix carrying discrete rebar, layered and sandwich sections, FRP or TRC strengthened sections, and crack localization for inelastic deflection.</p>
+          <div class="card-cta"><a class="arrow-link" href="software/hrc-designer.html">See HRC Designer</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Inverse analysis pipeline</h3>
+          <p class="small">Takes measured flexural test curves and recovers the tension law behind them. Batch auto-fit of four-point and three-point bending data, notched-beam crack-width inverse analysis on the EN 14651 CMOD basis, and a campaign runner that drives the engines over a list of validation cases, stores every result with its provenance, and re-renders the paper figures from the stored output.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Fiber pullout and fracture mechanics</h3>
+          <p class="small">Single-fiber pullout with shear-lag interface mechanics and R-curve debonding, from the classical two-zone model to a closed-form generalization for an n-segment interface law, with every equation cited to its source publication and equation number. Alongside it, crack band theory, the size effect law, and first-crack snap-through instability in ASTM C1609 testing.</p>
+          
+        </div>
+      </div></div><h2 style="font-size:1.4rem; margin-top:2.2rem">Design and code</h2><div class="grid grid-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Design code assistants</h3>
+          <p class="small">Reference assistants over the standards the group works in, answering from the governing clause rather than from recall, across ACI 544 guidance for fiber reinforced concrete, elevated and ground-supported fiber slabs, precast tunnel segments, fib Model Code 2010 residual strength classes, and ACI 318 based design. The assistants are internal tools; the standards themselves remain the property of their publishers.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Three-code slab calculator</h3>
+          <p class="small">Runs a steel fiber reinforced concrete slab through three independent design bases from one input set and reports them side by side, covering the North American, UK and European, and Swedish approaches. Punching shear, service stress, and crack width are checked in each basis, and safety formats are never mixed across codes inside a single check.</p>
+          
+        </div>
+      </div></div><h2 style="font-size:1.4rem; margin-top:2.2rem">Simulation</h2><div class="grid grid-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Finite element modeling</h3>
+          <p class="small">Member-level and continuum analysis of reinforced concrete, FRC, and UHPC, built and debugged against a searchable local index of the finite element documentation rather than from guesswork. The finite element layer never invents a constitutive law. It consumes the tension curve produced by the closed-form engines or measured in a test.</p>
+          
+        </div>
+      </div></div><h2 style="font-size:1.4rem; margin-top:2.2rem">Data recovery</h2><div class="grid grid-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Curve and figure digitization</h3>
+          <p class="small">Recovers the numbers behind published figures. Vector extraction from born-digital PDF figures with axis calibration, a separate path for scanned pages with tilted scans and dashed lines, and a third for off-axis photographs of a screen that corrects real perspective and lens distortion. Every path ends with an overlay of the trace on the original for human approval.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Measurement and crack quantification</h3>
+          <p class="small">Digital image correlation workflows for crack width, crack spacing, strain field, and neutral axis migration on cementitious specimens under monotonic and fatigue loading. Radial and flexural crack counting on panel photographs and published crack maps, reported against reinforcement ratio, fiber dosage, or boundary condition, and stopping at a verification gate before any count is quoted.</p>
+          
+        </div>
+      </div></div><h2 style="font-size:1.4rem; margin-top:2.2rem">Writing and figures</h2><div class="grid grid-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Figures and technical reporting</h3>
+          <p class="small">A locked house-style plotting library for moment-curvature, load-deflection, stress-strain, and R-curve figures, a matching library for free-body diagrams, and calculation reports in which every equation is an editable native object authored in LaTeX rather than a flattened image, following the formula then substitution then result pattern.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Literature search and synthesis</h3>
+          <p class="small">Full-text search and catalog maintenance over the group's research library, with duplicate detection and structured bibliographic fields, plus a multi-perspective research pipeline that runs question generation, retrieval-grounded drafting, a citation audit, and an explicit gap analysis.</p>
+          
+        </div>
+      </div></div><h2 style="font-size:1.4rem; margin-top:2.2rem">Governance</h2><div class="grid grid-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-maroon">in use</span></p>
+          <h3 style="font-size:1.08rem">Verification and review agents</h3>
+          <p class="small">The enforcement layer. A senior review agent audits drafts the way a human collaborator would, checking audience fit as well as the formal rules. A pre-deploy checker audits any tool that emits engineering numbers against a discipline distilled from a real project post-mortem, covering adversarial fixtures, sanity bounds written as code, cross-checks against authoritative references, and refusal to guess.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-gray">research</span></p>
+          <h3 style="font-size:1.08rem">Structural reliability solver</h3>
+          <p class="small">A First-Order Reliability Method solver verified against published benchmark cases, with SORM, Monte Carlo, reliability-based calibration of partial safety factors, and Bayesian updating. Its declared scope explicitly excludes domains it has not been verified for, so that it refuses rather than improvises outside its boundary.</p>
+          
+        </div>
+      </div></div><h2 style="font-size:1.4rem; margin-top:2.2rem">Architecture research</h2><div class="grid grid-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-1"><span class="badge badge-gray">research</span></p>
+          <h3 style="font-size:1.08rem">Domain brain architecture</h3>
+          <p class="small">A written specification for persistent, narrow-scope engineering intelligence: a router that delegates but is forbidden from answering, versioned domain systems that each know one field and refuse questions outside a declared scope, a doctrine layer of reviewed truths, a deterministic solver layer that owns all safety-critical computation, benchmarks with tolerance windows, provenance carrying versions and run identifiers, and a human review layer that approves promotion.</p>
+          
+        </div>
+      </div></div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="card card-maroon-top" style="padding:2.2rem">
+      <span class="eyebrow">Related venture</span>
+      <h2>SMC Labs</h2>
+      <p class="lead" style="max-width:70ch">A research lab spun out of the group, building verified engineering intelligence systems for high-consequence technical decisions.</p>
+      <p>SMC Labs, for Structures, Materials and Composites, applies the same discipline outside the university. Its central idea is the artificial domain expert, a narrow system that performs one engineering check or code calculation end to end. It takes structured inputs, runs a deterministic solver against verified code logic, and returns a result with the calculation steps shown and the governing clause named. The language model translates that result into plain English and holds none of the engineering authority.</p><p>The constraint the team works under is that building one of these requires someone who understands the physics behind a code clause rather than only its words. Their phrase for it is that only a human domain expert can create an artificial domain expert.</p><p>The first deployed tool of this kind takes a dropped pin and a drawn parcel boundary and returns a code-referenced feasibility report with a foundation recommendation, cut and fill estimate, structural loads, and a long-range cost projection, assembled from public government GIS layers. A rule engine makes every engineering decision in it. It won its track at HackASU 2025.</p>
+      <p class="small muted">Founded by Devansh Patel, Chidchanok Pleesudjai, Barzin Mobasher.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+</main>
+
+<footer class="asu-footer">
+  <div class="footer-social">
+    <div class="container wrap">
+      <a href="https://engineering.asu.edu/" aria-label="Ira A. Fulton Schools of Engineering">
+        <img class="endorsed" src="assets/img/asu_fultonengineering_white.png" alt="ASU Ira A. Fulton Schools of Engineering" width="193" height="64">
+      </a>
+      <div class="social-icons">
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=0hb7gdwAAAAJ" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 L2 9 l10 5 8-4 v6 h2 V9 Z M6 13.5 V17 c0 1.7 2.7 3 6 3 s6-1.3 6-3 v-3.5 l-6 3 Z"/></svg></a>
+        <a href="https://www.researchgate.net/profile/Barzin-Mobasher" aria-label="ResearchGate" title="ResearchGate"><svg viewBox="0 0 24 24" aria-hidden="true"><text x="12" y="17" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">RG</text></svg></a>
+        <a href="https://orcid.org/0000-0002-7580-2855" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><text x="12" y="16" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">iD</text></svg></a>
+        <a href="https://www.linkedin.com/in/barzin-mobasher-0496491b" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg></a>
+        <a href="https://www.youtube.com/channel/UCTP_Ze7IznnaSgSL1SbUfwg" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9.5 L15 12 L10 14.5 Z" fill="#fff"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-innovation">
+    <div class="container wrap">
+      <a href="https://www.asu.edu/about/rankings" aria-label="ASU rankings">
+        <img src="assets/img/innovationLogo.png" alt="ASU repeatedly ranked number one, 30 plus lists in the last 3 years" width="390" height="64">
+      </a>
+    </div>
+  </div>
+  <div class="footer-columns">
+    <div class="container">
+      <ul>
+        <li><a href="https://www.asu.edu/about/locations-maps">Maps and Locations</a></li>
+        <li><a href="https://cfo.asu.edu/applicant">Jobs</a></li>
+        <li><a href="https://search.asu.edu/?search-tabs=web_dir_faculty_staff">Directory</a></li>
+        <li><a href="https://www.asu.edu/about/contact">Contact ASU</a></li>
+        <li><a href="https://my.asu.edu/">My ASU</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <div class="container">
+      <ul>
+        <li><a href="https://www.asu.edu/about/copyright-trademark">Copyright and Trademark</a></li>
+        <li><a href="https://accessibility.asu.edu/report">Accessibility</a></li>
+        <li><a href="https://www.asu.edu/about/privacy">Privacy</a></li>
+        <li><a href="https://www.asu.edu/about/terms-of-use">Terms of Use</a></li>
+        <li><a href="https://www.asu.edu/emergency">Emergency</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

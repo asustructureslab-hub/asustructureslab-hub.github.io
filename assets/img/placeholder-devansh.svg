@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Portrait placeholder for Devansh Deepak Patel">
+  <rect width="600" height="600" fill="#e8e8e8"/>
+  <circle cx="300" cy="240" r="98" fill="#c9c9c9"/>
+  <path d="M115 525c0-102 82-168 185-168s185 66 185 168v75H115z" fill="#c9c9c9"/>
+  <rect x="0" y="0" width="600" height="12" fill="#FFC627"/>
+  <text x="300" y="565" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#484848">Photo coming soon</text>
+</svg>

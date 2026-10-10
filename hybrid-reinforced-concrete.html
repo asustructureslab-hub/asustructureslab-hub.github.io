@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hybrid reinforced concrete design | Barzin Mobasher Research Group</title>
+<meta name="description" content="Hybrid reinforced concrete (HRC) is concrete reinforced with both continuous steel bars and short fibers mixed through the concrete. The fibers carry tension across cracks and share the load with the bars, so part of the bar reinforcement can be replaced. The group developed closed-form equations for the flexural design of hybrid sections and checked them against nine full-size beams tested in Brazil.">
+<meta name="theme-color" content="#8C1D40">
+<link rel="canonical" href="https://mobasherlab.com/hybrid-reinforced-concrete.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Barzin Mobasher Research Group">
+<meta property="og:title" content="Hybrid reinforced concrete design">
+<meta property="og:description" content="Hybrid reinforced concrete (HRC) is concrete reinforced with both continuous steel bars and short fibers mixed through the concrete. The fibers carry tension across cracks and share the load with the bars, so part of the bar reinforcement can be replaced. The group developed closed-form equations for the flexural design of hybrid sections and checked them against nine full-size beams tested in Brazil.">
+<meta property="og:url" content="https://mobasherlab.com/hybrid-reinforced-concrete.html">
+<meta property="og:image" content="https://mobasherlab.com/assets/img/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/asu-unity.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<header class="asu-header">
+  <div class="container">
+    <div class="brand-row">
+      <a href="https://www.asu.edu/" aria-label="Arizona State University home">
+        <img class="asu-logo" src="assets/img/arizona-state-university-logo.png" alt="Arizona State University" width="289" height="52">
+      </a>
+      <a class="search-toggle" href="https://search.asu.edu/" aria-label="Search ASU">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="M15 15 l5 5 M17 8 h5 M17 12 h4"/></svg>
+      </a>
+    </div>
+    <div class="title-row">
+      <a class="site-title" href="index.html">Barzin Mobasher Research Group</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
+      <nav class="main-nav" id="mainnav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <div class="nav-item has-sub">
+          <a href="research.html" class="active" aria-current="page">Research</a>
+          <button class="sub-toggle" aria-expanded="false" aria-controls="nav-sub-1" aria-label="Open the Research menu"><span aria-hidden="true">&#9662;</span></button>
+          <div class="sub-menu" id="nav-sub-1">
+            <a href="research.html">Research overview</a>
+            <a href="fiber-reinforced-concrete.html">Fiber reinforced concrete</a>
+            <a href="hybrid-reinforced-concrete.html">Hybrid reinforced concrete</a>
+            <a href="textile-reinforced-concrete.html">Textile reinforced concrete</a>
+            <a href="uhpc.html">Ultra-high performance concrete</a>
+            <a href="precast-tunnel-lining.html">Precast tunnel lining</a>
+            <a href="projects/valley-metro.html">Valley Metro track slab</a>
+            <a href="projects.html">Projects</a>
+          </div>
+        </div>
+        <a href="people.html">People</a>
+        <div class="nav-item has-sub">
+          <a href="publications.html">Publications</a>
+          <button class="sub-toggle" aria-expanded="false" aria-controls="nav-sub-3" aria-label="Open the Publications menu"><span aria-hidden="true">&#9662;</span></button>
+          <div class="sub-menu" id="nav-sub-3">
+            <a href="publications.html">All publications</a>
+            <a href="selected-publications.html">Selected by topic</a>
+            <a href="presentations.html">Presentations and conferences</a>
+          </div>
+        </div>
+        <div class="nav-item has-sub">
+          <a href="software.html">Software</a>
+          <button class="sub-toggle" aria-expanded="false" aria-controls="nav-sub-4" aria-label="Open the Software menu"><span aria-hidden="true">&#9662;</span></button>
+          <div class="sub-menu" id="nav-sub-4">
+            <a href="software.html">All software</a>
+            <a href="software/hrc-designer.html">HRC Designer</a>
+          </div>
+        </div>
+        <a href="ai.html">AI</a>
+        <div class="nav-item has-sub">
+          <a href="videos.html">Media</a>
+          <button class="sub-toggle" aria-expanded="false" aria-controls="nav-sub-6" aria-label="Open the Media menu"><span aria-hidden="true">&#9662;</span></button>
+          <div class="sub-menu" id="nav-sub-6">
+            <a href="videos.html">Videos and lectures</a>
+            <a href="news.html">News and press</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<section class="subject-hero">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <a href="research.html">Research</a> / <span aria-current="page">Hybrid reinforced concrete</span></nav>
+    <div class="subject-hero-grid">
+      <div>
+        <h1>Hybrid reinforced concrete design</h1>
+        <hr class="divider-gold">
+        <p class="lead">Hybrid reinforced concrete (HRC) is concrete reinforced with both continuous steel bars and short fibers mixed through the concrete. The fibers carry tension across cracks and share the load with the bars, so part of the bar reinforcement can be replaced. The group developed closed-form equations for the flexural design of hybrid sections and checked them against nine full-size beams tested in Brazil.</p>
+        <div class="subject-jump"><a class="btn-tiny" href="#fibers-and-reinforcing-bars-in-one-member">Fibers and reinforcing bars in one member</a> <a class="btn-tiny" href="#cracked-section-with-fibers">Cracked section with fibers</a> <a class="btn-tiny" href="#closed-form-moment-curvature-model">Closed-form moment-curvature model</a> <a class="btn-tiny" href="#beam-tests-in-brazil">Beam tests in Brazil</a> <a class="btn-tiny" href="#load-sharing-between-fibers-and-bars">Load sharing between fibers and bars</a> <a class="btn-tiny" href="#ductility-and-minimum-reinforcement">Ductility and minimum reinforcement</a> <a class="btn-tiny" href="#hrc-designer">HRC Designer</a></div>
+      </div>
+      
+        <figure class="subject-hero-fig">
+          <img src="assets/img/subjects/hybrid-reinforced-concrete/bar-in-plain-and-fiber-concrete.png" alt="Two diagrams of a steel bar pulled out of a concrete block, one block of plain concrete and one with short fibers">
+          <figcaption>A reinforcing bar pulled from plain concrete, left, and from fiber reinforced concrete, right. Without fibers the stress on the concrete face is zero, and with fibers a residual stress acts on that face and shares the tensile load with the bar.</figcaption>
+        </figure>
+    </div>
+  </div>
+</section>
+
+  <section class="subject-facts">
+    <div class="container">
+      <div class="subject-fact-grid">
+        <div class="subject-fact"><div class="v">9</div><div class="l">full-size beams tested in four-point bending over a 4000 mm span</div></div>
+        <div class="subject-fact"><div class="v">43 to 65%</div><div class="l">higher moment capacity under service conditions with 50 to 80% of the bars replaced by 1.25% steel fibers</div></div>
+        <div class="subject-fact"><div class="v">74 to 92%</div><div class="l">of the tensile force in the cracked concrete carried by fiber bridging in the serviceability range</div></div>
+        <div class="subject-fact"><div class="v">15 to 24%</div><div class="l">higher first-crack strength than the conventional reinforced concrete beams</div></div>
+      </div>
+    </div>
+  </section>
+<section class="subject-sec" id="fibers-and-reinforcing-bars-in-one-member">
+    <div class="container">
+      <div class="subject-row">
+        <div class="subject-text">
+          <h2>Fibers and reinforcing bars in one member</h2>
+          <p>There are numerous advantages of using a fiber reinforced concrete system in applications such as elevated slabs, industrial floors, and structural thin sections. The key advantage is in the time reduction of the installation as the double layers of traditional rebars and stirrups can result in several weeks of construction time.</p>
+        <p>Many high reliability applications such as tunnel linings are reinforced only with fiber due to their economic benefits. Hybrid designs that utilize both steel fibers and rebar have demonstrated significant advantages in various structural applications.</p>
+        </div>
+        <figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/moment-curvature-frc-rc-hrc.png"><img src="assets/img/subjects/hybrid-reinforced-concrete/moment-curvature-frc-rc-hrc.png" alt="Plot of normalized moment against normalized curvature with three curves for a slab section" loading="lazy"></a>
+        <figcaption>Computed moment against curvature, both normalized, for a slab section with fibers only (green), with a reinforcing bar only (blue) and with both (red). The hybrid section carries a higher moment than either of the other two.</figcaption>
+      </figure>
+      </div>
+      
+    </div>
+  </section>
+<section class="subject-sec band-gray" id="cracked-section-with-fibers">
+    <div class="container">
+      <div class="subject-row flip">
+        <div class="subject-text">
+          <h2>Cracked section with fibers</h2>
+          <p>Conventional reinforced concrete design ignores the tensile strength of the concrete, so the bars are expected to carry all of the tension as soon as the concrete cracks. In a plain reinforced section the contribution of the concrete falls below 10% once cracking starts. Fibers bridge the crack and keep transmitting stress across it. This residual tensile strength lets the cracked concrete keep sharing the tension with the bars.</p>
+        <p>As the crack extends, the bridging delays the build-up of stress in the bar and its yielding. The cracked section is therefore stiffer under service loads, and the model below predicts smaller strains and crack widths at a given load.</p>
+        </div>
+        <figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/stress-distribution-rc-hrc.png"><img src="assets/img/subjects/hybrid-reinforced-concrete/stress-distribution-rc-hrc.png" alt="Stress profiles through the depth of a conventional beam section and a hybrid beam section, with sketches of the two cross sections" loading="lazy"></a>
+        <figcaption>Computed stress through the depth of the conventional beam V2 and of the hybrid beam V9, which has half the tension bars and 1.25% fibers, both with the bar stress at 0.8 of yield. Blue is compression and red is tension in the concrete. The moment is 80 kN-m in V2 and 132 kN-m in V9.</figcaption>
+      </figure>
+      </div>
+      
+    </div>
+  </section>
+<section class="subject-sec" id="closed-form-moment-curvature-model">
+    <div class="container">
+      <div class="subject-row">
+        <div class="subject-text">
+          <h2>Closed-form moment-curvature model</h2>
+          <p>Moment-curvature is the relation between the bending moment on a section and the curvature it produces. In the model developed by the group the concrete in tension, the concrete in compression and the steel are each described by a stress-strain law made of straight segments. The equilibrium of forces on the section can then be solved exactly, so the depth of the neutral axis, the moment and the curvature are each given by an equation.</p>
+        <p>The tensile strain at the bottom of the section is the independent variable. As it grows the section passes through stages such as cracking of the concrete and yielding of the bar, each with its own solution, and the response is the envelope of these solutions. Because the strain is followed through the whole loading, one model gives the load-deflection curve and serves both the serviceability checks on stress, strain, crack width and deflection and the check at ultimate load.</p>
+        <p>The 2023 paper unifies the earlier solutions of the group, among them a 2015 solution for hybrid steel fiber beams, under multilinear laws and reinforcement in different layers.</p>
+        </div>
+        <figure class="subject-fig">
+        <a href="assets/img/hrc/model-diagram.png"><img src="assets/img/hrc/model-diagram.png" alt="Beam cross section with top and bottom bars, three stress-strain diagrams for tension, compression and reinforcement, and a sketch of a cracked beam under two point loads" loading="lazy"></a>
+        <figcaption>Beam section and the straight-segment laws for the concrete in tension, the concrete in compression and the reinforcement, as implemented in HRC Designer. The sketch at the bottom shows the beam under two point loads with the cracked region at midspan.</figcaption>
+      </figure>
+      </div>
+      <div class="subject-figs n2"><figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/envelope-moment-curvature.png"><img src="assets/img/subjects/hybrid-reinforced-concrete/envelope-moment-curvature.png" alt="Two plots of moment against curvature, one for a conventional beam and one for a hybrid beam, with model curves and test points" loading="lazy"></a>
+        <figcaption>Moment against curvature for the conventional beam V2 (a) and the hybrid beam V9 (b). The colored lines are the solutions of the separate stages, the gray band is their envelope and the circles are the test. The computed moment of V2 drops after the first crack, while that of V9 keeps rising.</figcaption>
+      </figure>
+<figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/neutral-axis-depth.png"><img src="assets/img/subjects/hybrid-reinforced-concrete/neutral-axis-depth.png" alt="Two plots of neutral axis position in the beam depth against deflection, with model lines and test points" loading="lazy"></a>
+        <figcaption>Position of the neutral axis in the 600 mm deep section against deflection, computed (lines) and from the tests (symbols), for the conventional beam V2 and the hybrid beams V6 and V9.</figcaption>
+      </figure></div>
+    </div>
+  </section>
+<section class="subject-sec band-gray" id="beam-tests-in-brazil">
+    <div class="container">
+      <div class="subject-row flip">
+        <div class="subject-text">
+          <h2>Beam tests in Brazil</h2>
+          <p>The model was checked against nine beams tested in Brazil with the Federal University of Goiás, the Federal University of Rio de Janeiro and Furnas. Each beam was 600 mm deep, 200 mm wide and 4400 mm long and was loaded in four-point bending over a 4000 mm span. Beams V1 and V2 were conventional reinforced concrete. Beams V3 to V9 were hybrid, with 0.5 to 1.25% of hooked-end steel fibers by volume and 50 to 80% less flexural reinforcement, which left them below the minimum specified for a conventional beam.</p>
+        <p>The first-crack strength of the hybrid beams was 15 to 24% higher than that of the conventional beams, and at the same reinforcement ratio they were stiffer after cracking with fewer cracks and smaller deflections. With 50 to 80% of the longitudinal reinforcement replaced by 1.25% steel fibers, the moment capacity under service conditions rose by 43 to 65%, while the ultimate load fell by 10 to 50%.</p>
+        </div>
+        <figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/beam-in-test-frame.jpg"><img src="assets/img/subjects/hybrid-reinforced-concrete/beam-in-test-frame.jpg" alt="A long concrete beam in a yellow steel loading frame with two hydraulic actuators above it" loading="lazy"></a>
+        <figcaption>A beam in the loading frame. Two actuators load the beam between the supports in four-point bending.</figcaption>
+      </figure>
+      </div>
+      <div class="subject-figs n2"><figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/crack-patterns-v6-v9.jpg"><img src="assets/img/subjects/hybrid-reinforced-concrete/crack-patterns-v6-v9.jpg" alt="Side faces of two concrete beams with cracks traced in ink and marked with arrows" loading="lazy"></a>
+        <figcaption>Crack patterns traced on the side faces of the hybrid beams V6 and V9 at a bar strain of 0.01.</figcaption>
+      </figure>
+<figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/load-deflection-model-and-test.png"><img src="assets/img/subjects/hybrid-reinforced-concrete/load-deflection-model-and-test.png" alt="Three plots of load against deflection for seven hybrid beams with test points and model lines" loading="lazy"></a>
+        <figcaption>Load against deflection for the seven hybrid beams, measured (open symbols) and computed with the closed-form model (lines). Triangles mark the first crack and squares mark yielding of the steel. The curves in each panel are offset along the deflection axis.</figcaption>
+      </figure></div>
+    </div>
+  </section>
+<section class="subject-sec" id="load-sharing-between-fibers-and-bars">
+    <div class="container">
+      <div class="subject-row">
+        <div class="subject-text">
+          <h2>Load sharing between fibers and bars</h2>
+          <p>In the conventional beams V1 and V2 the simulation gives an unstable response immediately after the first crack, which corresponds to the energy released as cracks grow in the concrete. In the hybrid beams V4 and V6 no sudden drop is observed, because the residual tensile strength of the fiber concrete shares the load after the first crack.</p>
+        <p>The closed-form solution gives the tensile and compressive force in each component at every load stage. Over the whole serviceability range, fiber bridging carried 74 to 92% of the tensile force in the cracked concrete, and the tension efficiency of the concrete rose by as much as 83%.</p>
+        </div>
+        <figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/rebar-strain-after-first-crack.png"><img src="assets/img/subjects/hybrid-reinforced-concrete/rebar-strain-after-first-crack.png" alt="Plot of load against bar strain for two conventional beams and two hybrid beams, with test points and model lines" loading="lazy"></a>
+        <figcaption>Load against strain in the reinforcing bar, measured (points) and computed (lines), for beams V1, V2, V4 and V6. The conventional beams V1 and V2 lose load after the first crack, marked as strain energy release, and the hybrid beams V4 and V6 do not. The curves are offset along the strain axis.</figcaption>
+      </figure>
+      </div>
+      <div class="subject-figs n1"><figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/force-sharing-efficiency-factors.png"><img src="assets/img/subjects/hybrid-reinforced-concrete/force-sharing-efficiency-factors.png" alt="Four plots of load and efficiency factors against deflection for beams V1, V2, V6 and V9, each with a sketch of the cross section" loading="lazy"></a>
+        <figcaption>Load against deflection (black, left axis) for the conventional beams V1 and V2 and the hybrid beams V6 and V9. The other lines, read on the right axis, are the shares of the force carried by the concrete and by the bars in tension and in compression. After cracking the share of the concrete in tension falls toward zero in V1 and V2 and stays above 0.7 in V6 and V9.</figcaption>
+      </figure></div>
+    </div>
+  </section>
+<section class="subject-sec band-gray" id="ductility-and-minimum-reinforcement">
+    <div class="container">
+      <div class="subject-row flip">
+        <div class="subject-text">
+          <h2>Ductility and minimum reinforcement</h2>
+          <p>The fibers raise the stiffness after cracking and improve crack control, while the longitudinal reinforcement ratio governs the ultimate strength and the deformation capacity. At a fiber content of 0.75%, the beam with a reinforcement ratio of 0.131% reached a 32% higher ultimate load and a 56% larger ultimate deflection than the beam with 0.052%.</p>
+        <p>Ductility is the ratio of the deformation at failure to the deformation at yielding of the bars. At a constant reinforcement ratio, adding fibers reduced the deflection ductility. With a lower limit of 3.0 on this ratio, the conventional beams and the hybrid beams with up to 0.75% fibers were ductile. By the ductility requirements of the fib Model Code 2020, all hybrid beams with reinforcement ratios of 0.052 to 0.131% were ductile.</p>
+        <p>The 2023 model gives the minimum reinforcement ratio in closed form, as the amount of bar that keeps the ultimate moment above the first cracking moment. In its design chart this minimum is nearly zero at a residual tensile strength ratio of 0.34, where fibers may replace the continuous bars.</p>
+        </div>
+        <figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/load-deflection-fiber-content.png"><img src="assets/img/subjects/hybrid-reinforced-concrete/load-deflection-fiber-content.png" alt="Two plots, load against deflection for three fiber contents and load against strain in concrete and bars for two beams" loading="lazy"></a>
+        <figcaption>Effect of fiber content at a reinforcement ratio of 0.052%. (a) Measured load against deflection with 0.75%, 1% and 1.25% fibers. (b) Strain in the concrete and in the bars of beams V4 and V6.</figcaption>
+      </figure>
+      </div>
+      <div class="subject-figs n1"><figure class="subject-fig">
+        <a href="assets/img/subjects/hybrid-reinforced-concrete/load-deflection-reinforcement-ratio.png"><img src="assets/img/subjects/hybrid-reinforced-concrete/load-deflection-reinforcement-ratio.png" alt="Two plots, load against deflection for three reinforcement arrangements and load against strain in concrete and bars for two beams" loading="lazy"></a>
+        <figcaption>Effect of the bars at a fiber content of 0.75%. (a) Measured load against deflection for reinforcement ratios of 0.052% and 0.131%, and for 0.052% with skin reinforcement along the side faces. (b) Strain in the concrete and in the bars of beams V4 and V8.</figcaption>
+      </figure></div>
+    </div>
+  </section>
+<section class="subject-sec" id="hrc-designer">
+    <div class="container">
+      <div class="subject-row">
+        <div class="subject-text">
+          <h2>HRC Designer</h2>
+          <p>The closed-form method is implemented in HRC Designer, the free software of the group for Windows. Its hybrid beam module takes the geometry, the reinforcement and the material laws and returns moment-curvature, load-deflection and the stress and force profiles through the depth. First crack, service stress in the bar, steel yield and compression yield of the concrete are marked on the curves. The equations are solved without iteration, so the results update as a value is typed.</p>
+        </div>
+        <figure class="subject-fig">
+        <a href="assets/img/hrc/hybrid-moment-curvature.png"><img src="assets/img/hrc/hybrid-moment-curvature.png" alt="Screenshot of the hybrid beam module of HRC Designer with a tension model plot and a moment-curvature plot" loading="lazy"></a>
+        <figcaption>Hybrid beam module of HRC Designer. The tension law of the fiber concrete is entered on the left, and the moment-curvature curve on the right is marked with first crack, service stress, steel yield and compression yield of the concrete.</figcaption>
+      </figure>
+      </div>
+      
+    </div>
+  </section>
+
+<section class="subject-sec" id="papers">
+  <div class="container">
+    <div class="section-head">
+      <h2>Papers</h2>
+      <a class="arrow-link" href="publications.html">All publications</a>
+    </div>
+    <div class="pub-item filterable" data-cat="journal" data-search="Mechanism of tensile load sharing in hybrid reinforced concrete flexural members Chidchanok Pleesudjai Devansh Patel Daniel L. Araujo Carlos A. S. Oliveira Romildo D. Toledo Filho Barzin Mobasher Construction and Building Materials 2026 HRC Tension stiffening">
+    <p class="pub-title"><a href="papers/pleesudjai2026loadsharing.html">Mechanism of tensile load sharing in hybrid reinforced concrete flexural members</a></p>
+    <p class="pub-authors"><a class="me" href="people/chidchanok-pleesudjai.html">Chidchanok Pleesudjai</a>, <a class="me" href="people/devansh-patel.html">Devansh Patel</a>, Daniel L. Araujo, Carlos A. S. Oliveira, Romildo D. Toledo Filho, <a class="me" href="people/barzin-mobasher.html">Barzin Mobasher</a> (2026)</p>
+    <p class="pub-venue">Construction and Building Materials, 506, 144835</p>
+    <div class="pub-actions"><span class="badge badge-maroon">Journal</span> <span class="badge badge-gold">Featured</span> <a class="btn-tiny" href="https://doi.org/10.1016/j.conbuildmat.2025.144835">DOI</a> <a class="btn-tiny" href="papers/pleesudjai2026loadsharing.html">Paper page</a></div>
+    
+  </div><div class="pub-item filterable" data-cat="journal" data-search="Efficiency of hybrid reinforced concrete beams with low reinforcement ratios Chidchanok Pleesudjai Carlos A. S. Oliveira Daniel L. Araujo Devansh Patel Moacir Alexandre Souza de Andrade Romildo Toledo Filho Barzin Mobasher Materials and Structures 2025 HRC Minimum reinforcement">
+    <p class="pub-title"><a href="papers/pleesudjai2025efficiency.html">Efficiency of hybrid reinforced concrete beams with low reinforcement ratios</a></p>
+    <p class="pub-authors"><a class="me" href="people/chidchanok-pleesudjai.html">Chidchanok Pleesudjai</a>, Carlos A. S. Oliveira, Daniel L. Araujo, <a class="me" href="people/devansh-patel.html">Devansh Patel</a>, Moacir Alexandre Souza de Andrade, Romildo Toledo Filho, <a class="me" href="people/barzin-mobasher.html">Barzin Mobasher</a> (2025)</p>
+    <p class="pub-venue">Materials and Structures, 58 (6), 218</p>
+    <div class="pub-actions"><span class="badge badge-maroon">Journal</span> <span class="badge badge-gold">Featured</span> <a class="btn-tiny" href="https://doi.org/10.1617/s11527-025-02736-4">DOI</a> <a class="btn-tiny" href="papers/pleesudjai2025efficiency.html">Paper page</a></div>
+    
+  </div><div class="pub-item filterable" data-cat="journal" data-search="Generalized Nonlinear Moment-Curvature Model for Serviceability-Based Design of Hybrid Reinforced Concrete C. Pleesudjai D. D. Patel B. Mobasher Journal of Structural Engineering, ASCE 2023 Closed-form solutions HRC Moment-curvature">
+    <p class="pub-title"><a href="papers/pleesudjai2023generalized.html">Generalized Nonlinear Moment-Curvature Model for Serviceability-Based Design of Hybrid Reinforced Concrete</a></p>
+    <p class="pub-authors"><a class="me" href="people/chidchanok-pleesudjai.html">C. Pleesudjai</a>, <a class="me" href="people/devansh-patel.html">D. D. Patel</a>, <a class="me" href="people/barzin-mobasher.html">B. Mobasher</a> (2023)</p>
+    <p class="pub-venue">Journal of Structural Engineering, ASCE, 149 (12), 04023188</p>
+    <div class="pub-actions"><span class="badge badge-maroon">Journal</span> <span class="badge badge-gold">Featured</span> <a class="btn-tiny" href="https://doi.org/10.1061/JSENDH.STENG-12235">DOI</a> <a class="btn-tiny" href="papers/pleesudjai2023generalized.html">Paper page</a> <button class="btn-tiny" data-copy="#bib-pleesudjai2023generalized">Copy BibTeX</button></div>
+    <pre id="bib-pleesudjai2023generalized" hidden>@article{pleesudjai2023generalized,
+  author  = {Pleesudjai, Chidchanok and Patel, Devansh Deepak and Mobasher, Barzin},
+  title   = {Generalized Nonlinear Moment-Curvature Model for Serviceability-Based Design of Hybrid Reinforced Concrete},
+  journal = {Journal of Structural Engineering},
+  volume  = {149},
+  number  = {12},
+  pages   = {04023188},
+  year    = {2023},
+  doi     = {10.1061/JSENDH.STENG-12235}
+}</pre>
+  </div><div class="pub-item filterable" data-cat="journal" data-search="Analytical solutions for flexural design of hybrid steel fiber reinforced concrete beams Barzin Mobasher Yiming Yao Chote Soranakom Engineering Structures 2015 ">
+    <p class="pub-title">Analytical solutions for flexural design of hybrid steel fiber reinforced concrete beams</p>
+    <p class="pub-authors"><a class="me" href="people/barzin-mobasher.html">Barzin Mobasher</a>, Yiming Yao, <span class="me">Chote Soranakom</span> (2015)</p>
+    <p class="pub-venue">Engineering Structures, 100, 164-177</p>
+    <div class="pub-actions"><span class="badge badge-maroon">Journal</span> <a class="btn-tiny" href="https://doi.org/10.1016/j.engstruct.2015.06.006">DOI</a></div>
+    
+  </div><div class="pub-item filterable" data-cat="journal" data-search="Experimental investigation of tension stiffening in hybrid reinforced concrete ties Ederli Marangon Barzin Mobasher Wagner Dambros Fernandes Flávio de A. Silva Dimas A.S. Rambo Ronaldo C. Battista Eduardo M.R. Fairbairn Romildo D. Toledo Filho Construction and Building Materials 2025 ">
+    <p class="pub-title">Experimental investigation of tension stiffening in hybrid reinforced concrete ties</p>
+    <p class="pub-authors">Ederli Marangon, <a class="me" href="people/barzin-mobasher.html">Barzin Mobasher</a>, Wagner Dambros Fernandes, Flávio de A. Silva, Dimas A.S. Rambo, Ronaldo C. Battista, Eduardo M.R. Fairbairn, Romildo D. Toledo Filho (2025)</p>
+    <p class="pub-venue">Construction and Building Materials, 458, 139505</p>
+    <div class="pub-actions"><span class="badge badge-maroon">Journal</span> <a class="btn-tiny" href="https://doi.org/10.1016/j.conbuildmat.2024.139505">DOI</a></div>
+    
+  </div><div class="pub-item filterable" data-cat="journal" data-search="Limit-state based design of hybrid reinforced UHPC flexural beams using parametric modeling D. D. Patel C. Pleesudjai N. Neithalath B. Mobasher Engineering Structures 2026 UHPC Limit-state design HRC">
+    <p class="pub-title">Limit-state based design of hybrid reinforced UHPC flexural beams using parametric modeling</p>
+    <p class="pub-authors"><a class="me" href="people/devansh-patel.html">D. D. Patel</a>, <a class="me" href="people/chidchanok-pleesudjai.html">C. Pleesudjai</a>, N. Neithalath, <a class="me" href="people/barzin-mobasher.html">B. Mobasher</a> (2026)</p>
+    <p class="pub-venue">Engineering Structures, 357, 122353</p>
+    <div class="pub-actions"><span class="badge badge-maroon">Journal</span> <span class="badge badge-gold">Featured</span> <a class="btn-tiny" href="https://doi.org/10.1016/j.engstruct.2026.122353">DOI</a></div>
+    
+  </div><div class="pub-item filterable" data-cat="journal" data-search="Generalized Nonlinear Moment-Curvature model for flexural fatigue of hybrid reinforced concrete beams Iranildo Barbosa da Silva Junior Vitor Moreira de Alencar Monteiro Devansh Deepak Patel Cássio Marques Rodrigues Gaspar Barzin Mobasher Flávio de Andrade Silva Engineering Structures 2025 Fatigue HRC Moment-curvature">
+    <p class="pub-title">Generalized Nonlinear Moment-Curvature model for flexural fatigue of hybrid reinforced concrete beams</p>
+    <p class="pub-authors">Iranildo Barbosa da Silva Junior, Vitor Moreira de Alencar Monteiro, <a class="me" href="people/devansh-patel.html">Devansh Deepak Patel</a>, Cássio Marques Rodrigues Gaspar, <a class="me" href="people/barzin-mobasher.html">Barzin Mobasher</a>, Flávio de Andrade Silva (2025)</p>
+    <p class="pub-venue">Engineering Structures, 345, 121539</p>
+    <div class="pub-actions"><span class="badge badge-maroon">Journal</span> <a class="btn-tiny" href="https://doi.org/10.1016/j.engstruct.2025.121539">DOI</a></div>
+    
+  </div><div class="pub-item filterable" data-cat="journal" data-search="Interaction diagrams for design of hybrid fiber-reinforced tunnel segments Yiming Yao Mehdi Bakhshi Verya Nasri Barzin Mobasher Materials and Structures 2018 ">
+    <p class="pub-title">Interaction diagrams for design of hybrid fiber-reinforced tunnel segments</p>
+    <p class="pub-authors">Yiming Yao, <span class="me">Mehdi Bakhshi</span>, Verya Nasri, <a class="me" href="people/barzin-mobasher.html">Barzin Mobasher</a> (2018)</p>
+    <p class="pub-venue">Materials and Structures, 51</p>
+    <div class="pub-actions"><span class="badge badge-maroon">Journal</span> <a class="btn-tiny" href="https://doi.org/10.1617/s11527-018-1159-2">DOI</a></div>
+    
+  </div><div class="pub-item filterable" data-cat="journal" data-search="Closed-form solutions for flexural response of fiber-reinforced concrete beams C. Soranakom B. Mobasher Journal of Engineering Mechanics, ASCE 2007 Closed-form solutions FRC Flexure">
+    <p class="pub-title"><a href="papers/soranakom2007closed.html">Closed-form solutions for flexural response of fiber-reinforced concrete beams</a></p>
+    <p class="pub-authors"><span class="me">C. Soranakom</span>, <a class="me" href="people/barzin-mobasher.html">B. Mobasher</a> (2007)</p>
+    <p class="pub-venue">Journal of Engineering Mechanics, ASCE, 133 (8), 933-941</p>
+    <div class="pub-actions"><span class="badge badge-maroon">Journal</span> <span class="badge badge-gold">Featured</span> <a class="btn-tiny" href="https://doi.org/10.1061/(ASCE)0733-9399(2007)133:8(933)">DOI</a> <a class="btn-tiny" href="papers/soranakom2007closed.html">Paper page</a> <button class="btn-tiny" data-copy="#bib-soranakom2007closed">Copy BibTeX</button></div>
+    <pre id="bib-soranakom2007closed" hidden>@article{soranakom2007closed,
+  author  = {Soranakom, Chote and Mobasher, Barzin},
+  title   = {Closed-form solutions for flexural response of fiber-reinforced concrete beams},
+  journal = {Journal of Engineering Mechanics},
+  volume  = {133},
+  number  = {8},
+  pages   = {933--941},
+  year    = {2007},
+  doi     = {10.1061/(ASCE)0733-9399(2007)133:8(933)}
+}</pre>
+  </div>
+  </div>
+</section>
+
+
+<section class="subject-sec" id="more">
+  <div class="container">
+    <div class="grid grid-2" style="gap:3rem; align-items:start">
+      <div>
+        <h2>Presentations</h2>
+        <ul class="subject-list">
+          <li><a href="assets/slides/2025-fib-task-group-4-1.pdf">Efficiency factors for fiber reinforced concrete</a> <span class="muted small">PDF</span></li>
+          <li><a href="assets/slides/2025-toughening-mechanisms-in-cement-composites.pdf">Toughening mechanisms in cement composites</a> <span class="muted small">PDF</span></li>
+          <li><a href="assets/slides/2026-dtu-summer-school.pdf">Lectures for DTU students on FRC, HRC and tunnel linings</a> <span class="muted small">PDF</span></li>
+          <li><a href="assets/slides/2025-retc-2025-short-course-advances-in-concrete-de.pdf">Efficient Testing and Design Methods for Underground Fiber Reinforced Concrete Structures</a> <span class="muted small">PDF</span></li>
+        </ul>
+        <p><a class="arrow-link" href="presentations.html">All presentations</a></p>
+      </div>
+      <div>
+        <h2>Related pages</h2>
+        <ul class="subject-list"><li><a href="software/hrc-designer.html">HRC Designer</a></li><li><a href="fiber-reinforced-concrete.html">Fiber reinforced concrete</a></li><li><a href="precast-tunnel-lining.html">Precast tunnel lining</a></li><li><a href="uhpc.html">Ultra-high performance concrete</a></li><li><a href="selected-publications.html">Selected publications</a></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="asu-footer">
+  <div class="footer-social">
+    <div class="container wrap">
+      <a href="https://engineering.asu.edu/" aria-label="Ira A. Fulton Schools of Engineering">
+        <img class="endorsed" src="assets/img/asu_fultonengineering_white.png" alt="ASU Ira A. Fulton Schools of Engineering" width="193" height="64">
+      </a>
+      <div class="social-icons">
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=0hb7gdwAAAAJ" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 L2 9 l10 5 8-4 v6 h2 V9 Z M6 13.5 V17 c0 1.7 2.7 3 6 3 s6-1.3 6-3 v-3.5 l-6 3 Z"/></svg></a>
+        <a href="https://www.researchgate.net/profile/Barzin-Mobasher" aria-label="ResearchGate" title="ResearchGate"><svg viewBox="0 0 24 24" aria-hidden="true"><text x="12" y="17" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">RG</text></svg></a>
+        <a href="https://orcid.org/0000-0002-7580-2855" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><text x="12" y="16" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">iD</text></svg></a>
+        <a href="https://www.linkedin.com/in/barzin-mobasher-0496491b" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg></a>
+        <a href="https://www.youtube.com/channel/UCTP_Ze7IznnaSgSL1SbUfwg" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9.5 L15 12 L10 14.5 Z" fill="#fff"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-innovation">
+    <div class="container wrap">
+      <a href="https://www.asu.edu/about/rankings" aria-label="ASU rankings">
+        <img src="assets/img/innovationLogo.png" alt="ASU repeatedly ranked number one, 30 plus lists in the last 3 years" width="390" height="64">
+      </a>
+    </div>
+  </div>
+  <div class="footer-columns">
+    <div class="container">
+      <ul>
+        <li><a href="https://www.asu.edu/about/locations-maps">Maps and Locations</a></li>
+        <li><a href="https://cfo.asu.edu/applicant">Jobs</a></li>
+        <li><a href="https://search.asu.edu/?search-tabs=web_dir_faculty_staff">Directory</a></li>
+        <li><a href="https://www.asu.edu/about/contact">Contact ASU</a></li>
+        <li><a href="https://my.asu.edu/">My ASU</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <div class="container">
+      <ul>
+        <li><a href="https://www.asu.edu/about/copyright-trademark">Copyright and Trademark</a></li>
+        <li><a href="https://accessibility.asu.edu/report">Accessibility</a></li>
+        <li><a href="https://www.asu.edu/about/privacy">Privacy</a></li>
+        <li><a href="https://www.asu.edu/about/terms-of-use">Terms of Use</a></li>
+        <li><a href="https://www.asu.edu/emergency">Emergency</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

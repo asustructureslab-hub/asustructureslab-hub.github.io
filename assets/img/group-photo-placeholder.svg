@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Group photo placeholder">
+  <defs>
+    <pattern id="topo" width="160" height="160" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.07">
+        <path d="M10 80c25-30 60-38 90-20s55 8 60-15"/>
+        <path d="M0 120c35-25 75-28 110-5s50 12 50-10"/>
+        <path d="M20 40c30-18 62-15 88 5s52 18 52-8"/>
+        <circle cx="45" cy="110" r="22"/>
+        <circle cx="45" cy="110" r="38"/>
+        <circle cx="125" cy="35" r="16"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="#191919"/>
+  <rect width="1200" height="800" fill="url(#topo)"/>
+  <circle cx="600" cy="360" r="86" fill="none" stroke="#FFC627" stroke-width="4"/>
+  <g stroke="#FFC627" stroke-width="4" fill="none" stroke-linejoin="round">
+    <rect x="556" y="336" width="88" height="56" rx="6"/>
+    <circle cx="600" cy="364" r="16"/>
+    <path d="M572 336l8-12h40l8 12"/>
+  </g>
+  <text x="600" y="530" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="bold" fill="#ffffff">Group photo coming soon</text>
+  <rect x="0" y="788" width="1200" height="12" fill="#FFC627"/>
+</svg>

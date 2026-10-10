@@ -1,0 +1,233 @@
+/* ==========================================================================
+   Barzin Mobasher Research Group — ASU Unity Design System look
+   Colors, type, and components follow ASU web standards:
+   maroon #8C1D40, gold #FFC627, Arial, pill buttons, square cards,
+   gold-highlight headings, standard ASU global footer.
+   ========================================================================== */
+
+:root {
+  --maroon: #8C1D40;
+  --maroon-dark: #6f1734;
+  --gold: #FFC627;
+  --dark: #191919;
+  --gray-7: #484848;
+  --gray-5: #6d6d6d;
+  --gray-4: #bfbfbf;
+  --gray-3: #d0d0d0;
+  --gray-2: #e8e8e8;
+  --gray-1: #fafafa;
+  --white: #ffffff;
+  --max-w: 1200px;
+  --shadow-1: 0 2px 8px rgba(25, 25, 25, .12);
+  --shadow-2: 0 8px 24px rgba(25, 25, 25, .18);
+}
+
+* { box-sizing: border-box; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+[id] { scroll-margin-top: 9rem; }
+
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--dark);
+  background: var(--white);
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--maroon); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: var(--maroon-dark); }
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--dark);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--gold);
+}
+.band-dark :focus-visible, .band-maroon :focus-visible, .hero-dark :focus-visible, .footer-social :focus-visible {
+  outline-color: var(--white);
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  margin: 0 0 .6em;
+  color: var(--dark);
+}
+h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); letter-spacing: -0.03em; }
+h2 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); }
+h3 { font-size: 1.35rem; }
+h4 { font-size: 1.05rem; }
+
+p { margin: 0 0 1em; }
+.lead { font-size: 1.2rem; line-height: 1.55; color: var(--gray-7); }
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 1.25rem; }
+
+section { padding: 3.5rem 0; }
+section.tight { padding: 2.25rem 0; }
+
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  background: var(--gold); color: var(--dark); font-weight: 700;
+  padding: .6rem 1rem; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
+
+
+/* --- Prototype ribbon ---------------------------------------------------- */
+.proto-ribbon {
+  background: var(--gold);
+  color: var(--dark);
+  font-size: .85rem;
+  font-weight: 700;
+  text-align: center;
+  padding: .45rem 1rem;
+}
+.proto-ribbon button {
+  background: none; border: 0; font: inherit; cursor: pointer;
+  margin-left: .75rem; text-decoration: underline;
+}
+
+
+/* --- Header -------------------------------------------------------------- */
+.asu-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.asu-header .brand-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .8rem 0 .55rem;
+}
+.asu-header .brand-row img.asu-logo { height: 52px; width: auto; }
+.asu-header .brand-row .search-toggle {
+  background: none; border: 0; cursor: pointer; padding: .4rem;
+  color: var(--dark);
+}
+.title-row {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap; padding-bottom: 0;
+}
+.site-title {
+  font-weight: 700; font-size: 1.05rem; color: var(--dark);
+  text-decoration: none; padding: .35rem 0 .8rem;
+}
+.site-title:hover { color: var(--maroon); }
+
+.main-nav { display: flex; gap: .25rem; flex-wrap: wrap; align-items: stretch; }
+
+
+/* --- Dropdown navigation ---------------------------------------------------- */
+.nav-item.has-sub { position: relative; display: flex; align-items: stretch; }
+.nav-item.has-sub > a { padding-right: .3rem; }
+.sub-toggle {
+  background: none; border: 0; cursor: pointer; color: var(--dark);
+  padding: .55rem .55rem .55rem .1rem; font-size: .8rem; line-height: 1;
+  border-bottom: 8px solid transparent;
+}
+.sub-toggle:hover { background: var(--gray-1); }
+.sub-menu {
+  display: none; position: absolute; top: 100%; left: 0; z-index: 120;
+  min-width: 15rem; background: var(--white);
+  border: 1px solid var(--gray-3); border-top: 4px solid var(--maroon);
+  box-shadow: var(--shadow-2); padding: .35rem 0;
+}
+.nav-item.has-sub.open .sub-menu { display: block; }
+.sub-menu a {
+  display: block; padding: .5rem 1rem; font-size: .92rem; font-weight: 400;
+  border-bottom: 0; text-decoration: none; color: var(--dark);
+}
+.sub-menu a:hover { background: var(--gray-1); color: var(--maroon); }
+@media (min-width: 901px) {
+  .nav-item.has-sub:hover .sub-menu,
+  .nav-item.has-sub:focus-within .sub-menu { display: block; }
+}
+@media (max-width: 900px) {
+  .nav-item.has-sub { flex-wrap: wrap; }
+  .nav-item.has-sub > a { flex: 1; }
+  .sub-menu { position: static; width: 100%; box-shadow: none; border: 0; border-left: 8px solid var(--gray-2); padding: 0 0 .3rem; }
+  .sub-menu a { padding-left: 1.6rem; }
+  .sub-toggle { border-bottom: 0; border-left: 0; padding: .55rem .9rem; }
+}
+.main-nav a {
+  display: block;
+  padding: .55rem .8rem;
+  font-weight: 700;
+  font-size: .95rem;
+  color: var(--dark);
+  text-decoration: none;
+  border-bottom: 8px solid transparent;
+}
+.main-nav a:hover { background: var(--gray-1); border-bottom-color: var(--gray-3); }
+.main-nav a.active { border-bottom-color: var(--gold); }
+
+.nav-toggle {
+  display: none;
+  background: var(--white); border: 1px solid var(--gray-3);
+  font-weight: 700; font-size: .95rem; padding: .5rem .9rem; cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .nav-toggle { display: inline-block; margin-bottom: .8rem; }
+  .main-nav {
+    display: none; width: 100%; flex-direction: column; gap: 0;
+    border-top: 1px solid var(--gray-3); padding-bottom: .5rem;
+  }
+  .main-nav.open { display: flex; }
+  .main-nav a { border-bottom: 0; border-left: 8px solid transparent; }
+  .main-nav a.active { border-left-color: var(--gold); }
+}
+
+
+/* --- Footer (ASU global footer) ------------------------------------------ */
+footer.asu-footer { margin-top: 3rem; }
+.footer-social {
+  background: var(--dark);
+  padding: 2.2rem 0;
+}
+.footer-social .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+.footer-social img.endorsed { height: 64px; width: auto; }
+.social-icons { display: flex; gap: .8rem; }
+.social-icons a, .social-icons > span {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: var(--white); color: var(--dark);
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none;
+}
+.social-icons a:hover { background: var(--gold); }
+.social-icons > span { opacity: .45; }
+.social-icons svg { width: 20px; height: 20px; fill: var(--dark); }
+
+.footer-innovation { background: var(--white); padding: 1.4rem 0; border-bottom: 1px solid var(--gray-2); }
+.footer-innovation .wrap { display: flex; justify-content: center; }
+.footer-innovation img { height: 64px; width: auto; }
+
+.footer-columns { background: var(--gray-2); padding: 1.6rem 0 .4rem; }
+.footer-columns ul {
+  list-style: none; margin: 0 auto; padding: 0;
+  display: flex; flex-wrap: wrap; gap: .4rem 2.6rem; justify-content: center;
+}
+.footer-columns a { color: var(--dark); font-weight: 700; text-decoration: none; }
+.footer-columns a:hover { text-decoration: underline; }
+
+.footer-legal { background: var(--gray-2); padding: .9rem 0 2rem; }
+.footer-legal ul {
+  list-style: none; margin: 0 auto; padding: 0;
+  display: flex; flex-wrap: wrap; gap: .3rem 1.8rem; justify-content: center;
+}
+.footer-legal a { color: var(--gray-7); font-size: .88rem; text-decoration: none; }
+.footer-legal a:hover { text-decoration: underline; }
+
